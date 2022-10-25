@@ -27,16 +27,23 @@ body, html{
     position: relative;
     padding: 1rem;
 }
+.clock-face{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px); /* account for the height of the clock hands */
+}
 
 .dot{
   position: absolute;
   width: 10px;
   height: 10px;
- border-radius: 50%; 
- border: 2px solid rgb(255, 255, 255);
- top: 50%;
- left: 50%;
- z-index: 999;
+  border-radius: 50%; 
+  border: 2px solid rgb(255, 255, 255);
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  transform: translate(-50%, -50%);
 }
 .hand{
     position: absolute;
@@ -47,19 +54,30 @@ body, html{
     transform-origin: 100%;
     transform: rotate(90deg);
     transition:all 0.5s;
-    border-radius: 40% 0% 0% 40%;
+    border-radius: 30% 0% 0% 30%;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+    
+    
 }
 
 .hour-hand {
     width: 40%;
     left: 10%;
-    height: 5px;
+    height: 6px;
+    
 }
 .minute-hand{
-    width: 40%;
+    width: 45%;
+    left: 5%;
+    height: 4px;
 }
 .second-hand{
     width: 49%;
     left:1%;
-    height: 3px;
+    
+}
+.digital-clock{
+    text-align: center;
+    color: #FFF;
+    font-size: 65px;
 }
