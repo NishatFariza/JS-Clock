@@ -12,5 +12,54 @@ body, html{
     background-position: center center;
     background-repeat:no-repeat ;
     background-size: cover;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock{
+    width: 20rem;
+    height: 20rem;
+    border: 1.5rem solid rgb(255, 255, 255);
+    border-radius: 50%;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    position: relative;
+    padding: 1rem;
+}
+
+.dot{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+ border-radius: 50%; 
+ border: 2px solid rgb(255, 255, 255);
+ top: 50%;
+ left: 50%;
+ z-index: 999;
+}
+.hand{
+    position: absolute;
+    width: 45%;
+    height: 3px;
+    background-color: rgb(255, 255, 255) ;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition:all 0.5s;
+    border-radius: 40% 0% 0% 40%;
+}
+
+.hour-hand {
+    width: 40%;
+    left: 10%;
+    height: 5px;
+}
+.minute-hand{
+    width: 40%;
+}
+.second-hand{
+    width: 49%;
+    left:1%;
+    height: 3px;
 }
