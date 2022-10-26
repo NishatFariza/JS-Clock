@@ -1,3 +1,4 @@
+const digitalClock = document.querySelector(".digital-clock")
 const hourHand = document.querySelector(".hour-hand")
 const minuteHand = document.querySelector(".minute-hand")
 const secondHand = document.querySelector(".second-hand")
@@ -27,18 +28,19 @@ function setDate() {
     ticAudio.play();
 
     //******************* Digital Clock **********************/
-    const ampm = hour >= 12
+    const _hour = hour < 10 ? "0" + hour : hour;
+    const _minute = minutes < 10 ? "0" + minutes : minutes;
+    const _second = seconds < 10 ? "0" + seconds : seconds;
+    const ampm = hour >= 12 ? "PM" : "AM";
 
 
-
+    digitalClock.textContent = `${_hour} : ${_minute} : ${_second} : ${ampm} `;
 
 
 }
 
-// const digitalClock = Document.querySelector(".digital-clock")
 // function digitalClock() {
 //     //digital clock time
-//     digitalClock.textContent = `${seconds} : ${minutes} : ${hour}`;
 //     }
     
 // setDate()
