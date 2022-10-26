@@ -34,7 +34,7 @@ function setDate() {
     const ampm = hour >= 12 ? "PM" : "AM";
 
 
-    digitalClock.textContent = `${_hour} : ${_minute} : ${_second} : ${ampm} `;
+    digitalClock.textContent = `${_hour} : ${_minute} : ${_second}  ${ampm} `;
 
 
 }
