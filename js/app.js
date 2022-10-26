@@ -24,7 +24,7 @@ function setDate() {
     const hourDegree = ((hour / 12) * 360) + 90;
     hourHand.style.transform = `rotate(${hourDegree}deg)`;
 
-
+    ticAudio.volume = .2; // 20% volume
     ticAudio.play();
 
     //******************* Digital Clock **********************/
@@ -39,11 +39,7 @@ function setDate() {
 
 }
 
-// function digitalClock() {
-//     //digital clock time
-//     }
-    
-// setDate()
+
 
 
 
