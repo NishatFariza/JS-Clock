@@ -29,7 +29,7 @@ body, html{
 .clock{
     width: 20rem;
     height: 20rem;
-    border: 1.5rem solid rgb(255, 255, 255);
+    border: 1.3rem solid rgb(255, 255, 255);
     border-radius: 50%;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     position: relative;
@@ -44,10 +44,10 @@ body, html{
 
 .dot{
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%; 
-  border: 2px solid rgb(255, 255, 255);
+  border: 4px solid rgb(255, 255, 255);
   top: 50%;
   left: 50%;
   z-index: 999;
